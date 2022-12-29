@@ -146,8 +146,6 @@ length2 = len2_cal()
 s1 = nC_mean_cal(1) * length
 s2 = nC_mean_cal(2) * 0.2 * length2
 err = 200 * (s1 - s2) / (s1 + s2)
-if err > 5:
-    err -= 3
 print("检查矿段约为 %.2f" % (length2*0.2))
 print("矿段编录面积为", "%.2f" % s1, ',',
       "检查编录矿段面积为", "%.2f" % s2, ',',
